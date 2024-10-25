@@ -28,12 +28,12 @@ export default {
 .pokemon-card {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc; /* Color del borde */
-  border-radius: 5px; /* Esquinas redondeadas */
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
   width: 150px;
   text-align: center;
-  background-color: white; /* Color de fondo blanco para las cartas */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para un mejor efecto visual */
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .pokemon-card img {

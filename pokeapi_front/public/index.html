@@ -3,15 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      body {
+        background-color: blue; /* Blue background */
+        color: yellow; /* Yellow text for better contrast */
+        font-family: Arial, sans-serif; /* Clean font choice */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 48px;
+        margin-top: 20px;
+        color: yellow; /* Bright yellow for the header */
+      }
+
+      /* Style for search input */
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+        margin-right: 10px;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        background-color: #eee;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #ddd;
+      }
+    </style>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+    <h1>Pokedex</h1>
+    <input type="text" placeholder="Nombre del Pokémon Ej. ivysaur" />
+    <button>Buscar</button>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
