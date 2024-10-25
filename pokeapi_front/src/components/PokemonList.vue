@@ -46,12 +46,47 @@ methods: {
 
 <style>
 .pokemon-list {
-text-align: center;
+    text-align: center;
+    background-color: blue;
+    padding: 20px; 
+    min-height: 100vh; 
 }
 
 .pokemon-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: calc(18% - 20px); 
+    height: 280px;
+    text-align: center;
+    background-color: blue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex; /* Cambiado a flex para alinear elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: space-between; /* Espacia los elementos verticalmente */
+}
+
+.pokemon-card img {
+    width: 160px; 
+    height: 160px; 
+    background-color: white; 
+    border-radius: 5px; 
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+}
+
+.pokemon-name {
+    color: white;
+    font-size: 18px; 
+    margin-top: 10px; 
 }
 </style>

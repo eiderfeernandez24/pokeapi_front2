@@ -1,7 +1,7 @@
 <template>
   <div class="pokemon-card">
     <img :src="pokemonImage" alt="Pokémon" />
-    <h2>{{ formattedName }}</h2>
+    <h2 class="pokemon-name">{{ formattedName }}</h2> <!-- El nombre del Pokémon -->
   </div>
 </template>
 
@@ -23,21 +23,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.pokemon-card {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  width: 150px;
-  text-align: center;
-  background-color: white; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-
-.pokemon-card img {
-  width: 100px;
-  height: 100px;
-}
-</style>
